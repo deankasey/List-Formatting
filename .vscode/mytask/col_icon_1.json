@@ -1,0 +1,31 @@
+{
+    "elmType": "div",
+    "children": [
+        {
+            "elmType": "div",
+            "style": {
+                "width": "32px",
+                "height": "32px",
+                "overflow": "hidden",
+                "border-radius": "50%"
+            },
+            "children": [
+                {
+                    "elmType": "img",
+                    "attributes": {
+                        "src": "@currentField"
+                    },
+                    "style": {
+                        "position": "relative",
+                        "top": "75%",
+                        "left": "75%",
+                        "width": "100%",
+                        "height": "auto",
+                        "margin-left": "-50%",
+                        "margin-top": "-50%"
+                    }
+                }
+            ]
+        }
+    ]
+}

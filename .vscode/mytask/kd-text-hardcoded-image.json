@@ -1,0 +1,11 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",
+    "elmType": "img",
+    "attributes": {
+        "src": "='https://kdean.sharepoint.com/sites/Competencies/SiteAssets/Forms/' + @currentField + '.png'"
+    },
+    "style": {
+        "width": "200px",
+        "height": "200px"
+    }
+}

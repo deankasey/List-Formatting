@@ -1,0 +1,12 @@
+{
+    "sourceDirectory": "src",
+    "sharePointSiteUrl": "https://kdean.sharepoint.com/sites/Competencies",
+    "workspaceRoot": "d:\\GitHub\\List-Formatting",
+    "publishWorkspaceOptions": {
+        "destinationFolder": "/",
+        "globPattern": "d:\\GitHub\\List-Formatting\\src\\**\\*.*",
+        "localRoot": "d:\\GitHub\\List-Formatting\\src"
+    },
+    "publishingScope": "SaveOnly",
+    "authenticationType": "AddinOnly"
+}

@@ -1,0 +1,37 @@
+<div>
+    <input type="button" id="btnSubmit" value "Get List Data using Rest API"/>
+    </div>
+    <div id="divResults"></div>
+script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    $(function () {}
+    $("#btnSubmit").on("click",function(){
+        getListData();
+    });
+});
+
+function getListData(){
+    var fullUrl=_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getByTitle("CompetencyList")/items";
+    $ajax({
+        url: fullUrl,
+        type: "GET",
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+        },
+        success: onQuerySucceeded,
+        error:onQueryFailed
+    });
+}
+
+function onQuerySucceeded(data){
+    var listItemInfo =";
+    $.each(data.d.results.function(key.value){
+listItemInfo +='<b>CompetencyTxt:</b>'+value.Title+'-<b>DomainDescription:</b>+value.DomainDescription+'<br/>';
+    });
+    $("divResults").html(listItemInfo);
+}
+function onQueryFailed (){
+    alert('Error!');
+}
+</script>
